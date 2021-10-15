@@ -1,13 +1,16 @@
-import React, {useState, useEffect} from 'react'
-import {Container, Row, Col} from 'react-bootstrap'
+import React from "react";
 
 function Home() {
 
 
     return (
-        <Container>
-            <h1>Start project here.</h1>
-        </Container>
+        <>
+            <div className='homeImage'></div>
+            <div className='intro'>
+                <h1>Hi, I'm Chris!</h1>
+                <h2>A Full-Stack Web Developer</h2>
+            </div>
+        </>
     )
 }
 

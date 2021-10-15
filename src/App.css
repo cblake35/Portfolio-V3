@@ -1,0 +1,43 @@
+/* Sidebar Styles */
+.routeWrapper {
+    width: 90%;
+    margin: 0;
+}
+
+.sidebar ul{ 
+    padding: 0;
+}
+
+.sidebar {
+    width: 10%;
+}
+
+.sidebar li {
+    list-style-type: none;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+
+/* Home Styles */
+.home {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+}
+
+.homeImage {
+    background-image: linear-gradient(to right, #ff731588, #ffe15d9f), url('./assets/homebackground.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 100%, 50% 100%, 0 100%);
+}
+
+.intro {
+    position: absolute;
+    top: 20%;
+    right: 25%;
+}
