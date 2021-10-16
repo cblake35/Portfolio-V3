@@ -4,6 +4,10 @@ import Home from './Home';
 import About from './About';
 import Work from './Work';
 import Contact from './Contact';
+import { FaHome } from 'react-icons/fa';
+import { BsFillPersonFill } from 'react-icons/bs';
+import { BsBriefcaseFill } from 'react-icons/bs';
+import { BsEnvelopeOpenFill } from 'react-icons/bs';
 
 function Sidebar() {
 
@@ -21,10 +25,10 @@ function Sidebar() {
                 </div>
                 <div className='sidebar'>
                     <ul>
-                        <li><Link to='/'>Home</Link></li>
-                        <li><Link to='/about'>About</Link></li>
-                        <li><Link to='/work'>Work</Link></li>
-                        <li><Link to='/contact'>Contact Me</Link></li>
+                        <li><Link to='/'><FaHome /></Link></li>
+                        <li ><Link to='/about'><BsFillPersonFill /></Link></li>
+                        <li><Link to='/work'><BsBriefcaseFill /></Link></li>
+                        <li><Link to='/contact'><BsEnvelopeOpenFill /></Link></li>
                     </ul>
                 </div>
             </Router>
