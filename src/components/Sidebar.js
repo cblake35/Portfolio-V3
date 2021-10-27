@@ -25,10 +25,38 @@ function Sidebar() {
                 </div>
                 <div className='sidebar'>
                     <ul>
-                        <li><Link to='/'><FaHome /></Link></li>
-                        <li ><Link to='/about'><BsFillPersonFill /></Link></li>
-                        <li><Link to='/work'><BsBriefcaseFill /></Link></li>
-                        <li><Link to='/contact'><BsEnvelopeOpenFill /></Link></li>
+                        <li>
+                            <Link to='/'>
+                                <div className='sidebarLinkWrapper'>
+                                    <div className='homeBtn'><span>Home</span></div>
+                                    <div className='homeSvg'><FaHome /></div>
+                                </div>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/about'>
+                                <div className='sidebarLinkWrapper'>
+                                    <div className='aboutBtn'><span>About</span></div>
+                                    <div className='aboutSvg'><BsFillPersonFill /></div>
+                                </div>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/work'>
+                                <div className='sidebarLinkWrapper'>
+                                    <div className='workBtn'><span>Work</span></div>
+                                    <div className='workSvg'><BsBriefcaseFill /></div>
+                                </div>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/contact'>
+                                <div className='sidebarLinkWrapper'>
+                                    <div className='contactBtn'><span>Contact</span></div>
+                                    <div className='contactSvg'><BsEnvelopeOpenFill /></div>
+                                </div>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </Router>
