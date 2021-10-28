@@ -26,34 +26,34 @@ function Sidebar() {
                 <div className='sidebar'>
                     <ul>
                         <li>
-                            <Link to='/'>
-                                <div className='sidebarLinkWrapper'>
-                                    <div className='homeBtn'><span>Home</span></div>
-                                    <div className='homeSvg'><FaHome /></div>
+                            <Link to='/' className='linkWrapper'>
+                                <div className='homeSvg'>
+                                    <div className='homeBtn'>Home</div>
+                                    <FaHome />
                                 </div>
                             </Link>
                         </li>
                         <li>
-                            <Link to='/about'>
-                                <div className='sidebarLinkWrapper'>
-                                    <div className='aboutBtn'><span>About</span></div>
-                                    <div className='aboutSvg'><BsFillPersonFill /></div>
+                            <Link to='/about' className='linkWrapper'>
+                                <div className='aboutSvg'>
+                                    <div className='aboutBtn'>About</div>
+                                    <BsFillPersonFill />
                                 </div>
                             </Link>
                         </li>
                         <li>
-                            <Link to='/work'>
-                                <div className='sidebarLinkWrapper'>
-                                    <div className='workBtn'><span>Work</span></div>
-                                    <div className='workSvg'><BsBriefcaseFill /></div>
+                            <Link to='/work' className='linkWrapper'>
+                                <div className='workSvg'>
+                                    <div className='workBtn'>Work</div>
+                                    <BsBriefcaseFill />
                                 </div>
                             </Link>
                         </li>
                         <li>
-                            <Link to='/contact'>
-                                <div className='sidebarLinkWrapper'>
-                                    <div className='contactBtn'><span>Contact</span></div>
-                                    <div className='contactSvg'><BsEnvelopeOpenFill /></div>
+                            <Link to='/contact' className='linkWrapper'>
+                                <div className='contactSvg'>
+                                    <div className='contactBtn'>Contact</div>
+                                    <BsEnvelopeOpenFill />
                                 </div>
                             </Link>
                         </li>

@@ -14,86 +14,17 @@
 .sidebar ul{ 
     padding: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar li {
     list-style-type: none;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .sidebar a {
     text-decoration: none;
-}
-
-.sidebarLinkWrapper {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
-}
-
-.sidebarLinkWrapper span {
-    font-size: 1.1rem;
-    color: white;
-}
-
-.homeBtn {
-    background-color: #FF7315;
-    margin-right: -38px;
-    padding-right: 15px;
-    border-radius: 50px;
-    padding: 8px 40px 8px 12px;
-    display: none;
-}
-
-.homeSvg {
-    background-color: #FF7315;
-    border-radius: 50%;
-    padding: 8px 12px;
-}
-
-.aboutBtn {
-    background-color: #FF7315;
-    margin-right: -38px;
-    padding-right: 15px;
-    border-radius: 50px;
-    padding: 8px 40px 8px 12px;
-    display: none;
-}
-
-.aboutSvg {
-    background-color: #FF7315;
-    border-radius: 50%;
-    padding: 8px 12px;
-}
-
-.workBtn {
-    background-color: #FF7315;
-    margin-right: -38px;
-    padding-right: 15px;
-    border-radius: 50px;
-    padding: 8px 40px 8px 12px;
-    display: none;
-}
-
-.workSvg {
-    background-color: #FF7315;
-    border-radius: 50%;
-    padding: 8px 12px;
-}
-
-.contactBtn {
-    background-color: #FF7315;
-    margin-right: -38px;
-    padding-right: 15px;
-    border-radius: 50px;
-    padding: 8px 40px 8px 12px;
-    display: none;
-}
-
-.contactSvg {
-    background-color: #FF7315;
-    border-radius: 50%;
-    padding: 8px 12px;
 }
 
 .sidebar svg {
@@ -101,6 +32,129 @@
     margin-bottom: 4px;
     color: white;
 }
+
+.linkWrapper {
+    width: 45px;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.homeBtn {
+    background-color: #FF7315;
+    padding-right: 15px;
+    border-radius: 50px;
+    padding: 8px 40px 8px 12px;
+    display: none;
+    left: -60px;
+    bottom: 0;
+    position: absolute;
+    font-size: 1.1rem;
+    z-index: -1;
+    color: white;
+}
+
+.homeSvg:hover .homeBtn {
+    display: block;
+}
+
+.homeSvg {
+    float: right;
+    margin-right: 20px;
+    background-color: #FF7315;
+    border-radius: 50%;
+    padding: 8px 12px;
+    position: relative;
+    z-index: 10;
+}
+
+.aboutBtn {
+    background-color: #FF7315;
+    padding-right: 15px;
+    border-radius: 50px;
+    padding: 8px 40px 8px 12px;
+    display: none;
+    left: -60px;
+    bottom: 0;
+    position: absolute;
+    font-size: 1.1rem;
+    z-index: -1;
+    color: white;
+}
+
+.aboutSvg:hover .aboutBtn {
+    display: block;
+}
+
+.aboutSvg {
+    float: right;
+    margin-right: 20px;
+    background-color: #FF7315;
+    border-radius: 50%;
+    padding: 8px 12px;
+    position: relative;
+    z-index: 10;
+}
+
+.workBtn {
+    background-color: #FF7315;
+    padding-right: 15px;
+    border-radius: 50px;
+    padding: 8px 40px 7px 12px;
+    display: none;
+    left: -55px;
+    bottom: 0;
+    position: absolute;
+    font-size: 1.1rem;
+    z-index: -1;
+    color: white;
+}
+
+.workSvg:hover .workBtn {
+    display: block;
+}
+
+.workSvg {
+    float: right;
+    margin-right: 20px;
+    background-color: #FF7315;
+    border-radius: 50%;
+    padding: 8px 12px;
+    position: relative;
+    z-index: 10;
+}
+
+.workSvg svg {
+    margin-bottom: 3px;
+}
+
+.contactBtn {
+    background-color: #FF7315;
+    padding-right: 15px;
+    border-radius: 50px;
+    padding: 8px 40px 8px 12px;
+    display: none;
+    left: -75px;
+    bottom: 0;
+    position: absolute;
+    font-size: 1.1rem;
+    z-index: -1;
+    color: white;
+}
+
+.contactSvg:hover .contactBtn {
+    display: block;
+}
+
+.contactSvg {
+    float: right;
+    margin-right: 20px;
+    background-color: #FF7315;
+    border-radius: 50%;
+    padding: 8px 12px;
+    position: relative;
+    z-index: 10;
+}
+
 
 
 
