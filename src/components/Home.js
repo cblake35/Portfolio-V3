@@ -1,5 +1,6 @@
 import React from "react";
-import { BsFillArrowRightCircleFill } from 'react-icons/bs'
+import { MdArrowForward } from 'react-icons/md';
+import {Link} from 'react-router-dom';
 
 function Home() {
 
@@ -10,7 +11,10 @@ function Home() {
             <div className='intro'>
                 <h1>HI, I'M CHRIS!</h1>
                 <h2>A Full-Stack Web Developer</h2>
-                <button>More about me <BsFillArrowRightCircleFill /></button>
+                <Link to='/about'>
+                    <span className='aboutMeSpan'>More about me</span>
+                    <span className='aboutMeSvg'><MdArrowForward /></span>
+                </Link>
             </div>
         </div>
     )

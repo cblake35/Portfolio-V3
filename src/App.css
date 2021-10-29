@@ -155,9 +155,6 @@
     z-index: 10;
 }
 
-
-
-
 /* Home Styles */
 .home {
     background-color: rgb(255, 255, 255);
@@ -189,16 +186,41 @@
     
 }
 
-.intro button {
-    border: solid 1px #FF7315;
-    /* border-color: #FF7315; */
+.intro a {
+    border: solid 2px #FF7315;
     background-color: white;
     border-radius: 20px;
     padding: 0 0 0 10px;
+    text-decoration: none;
+    color: grey;
+    content: "";
+    clear: both;
+    display: table;
 }
 
-.intro svg {
+.intro a:hover{
+    background-color: #FF7315;
+}
+
+.intro a:hover .aboutMeSpan {
+    color: white;
+}
+
+.intro a:hover svg {
+    color: white;
+}
+
+
+.aboutMeSpan {
+    padding: 0 10px;
+}
+
+.aboutMeSvg svg {
     font-size: 2rem;
-    color: #FF7315;
+    padding: 4px;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #FF7315;
+    box-shadow: 0 0 0 1px #FF7315;
 }
 
