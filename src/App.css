@@ -1,14 +1,16 @@
 /* Sidebar Styles */
 .routeWrapper {
-    width: 90%;
+    width: 100%;
     margin: 0;
 }
 
 .sidebar {
-    width: 10%;
     height: 100vh;
     display: flex;
     align-items: center;
+    position: sticky;
+    right: 0;
+    top: 0;
 }
 
 .sidebar ul{ 
@@ -32,12 +34,6 @@
     margin-bottom: 4px;
     color: white;
 
-}
-
-.linkWrapper {
-    width: 45px;
-    margin-right: 20px;
-    margin-left: auto;
 }
 
 .homeLink {
@@ -216,7 +212,7 @@
     top: 35%;
     right: 50%;
     width: 500px;
-    margin-right: -400px;
+    margin-right: -450px;
 }
 
 .intro h1 {
@@ -286,3 +282,40 @@
     box-shadow: 0 0 0 1px #FF7315;
 }
 
+/* About Me Styles */
+.aboutMeTitleWrapper {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+}
+
+.aboutMeTitle {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.aboutMeTitle h1 {
+    font-size: 3rem;
+    color: #646464;
+    margin-bottom: 0;
+}
+
+.aboutMeTitle span {
+    color: #FF7315;
+}
+
+.aboutMeInfo h2{
+    color: #646464;
+}
+.skillsTitleWrapper {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+}
+
+.skillsTitle {
+    text-align: center;
+    color: #646464;
+}
+
+.skillsTitle h2 {
+    margin-bottom: 0;
+}
