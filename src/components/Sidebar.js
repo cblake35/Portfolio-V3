@@ -27,33 +27,33 @@ function Sidebar() {
                     <ul>
                         <li>
                             <Link to='/' className='linkWrapper'>
-                                <div className='homeSvg'>
+                                <div className='homeLink'>
                                     <div className='homeBtn'>Home</div>
-                                    <FaHome />
+                                    <div className='homeSvg'><FaHome /></div>
                                 </div>
                             </Link>
                         </li>
                         <li>
                             <Link to='/about' className='linkWrapper'>
-                                <div className='aboutSvg'>
+                                <div className='aboutLink'>
                                     <div className='aboutBtn'>About</div>
-                                    <BsFillPersonFill />
+                                    <div className='aboutSvg'><BsFillPersonFill /></div>
                                 </div>
                             </Link>
                         </li>
                         <li>
                             <Link to='/work' className='linkWrapper'>
-                                <div className='workSvg'>
+                                <div className='workLink'>
                                     <div className='workBtn'>Work</div>
-                                    <BsBriefcaseFill />
+                                    <div className='workSvg'><BsBriefcaseFill /></div>
                                 </div>
                             </Link>
                         </li>
                         <li>
                             <Link to='/contact' className='linkWrapper'>
-                                <div className='contactSvg'>
+                                <div className='contactLink'>
                                     <div className='contactBtn'>Contact</div>
-                                    <BsEnvelopeOpenFill />
+                                    <div className='contactSvg'><BsEnvelopeOpenFill /></div>
                                 </div>
                             </Link>
                         </li>

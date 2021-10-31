@@ -40,120 +40,160 @@
     margin-left: auto;
 }
 
+.homeLink {
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    z-index: 10;
+}
+
 .homeBtn {
     background-color: #FF7315;
-    padding-right: 15px;
     border-radius: 50px;
-    padding: 8px 40px 8px 12px;
-    display: block;
-    left: -60px;
-    bottom: 0;
-    position: absolute;
-    font-size: 1.1rem;
-    z-index: -1;
-    color: white;
-}
-
-.homeSvg:hover .homeBtn {
-    
-}
-
-.homeSvg {
-    float: right;
-    margin-right: 20px;
-    background-color: #FF7315;
-    border-radius: 50%;
-    padding: 8px 12px;
-    position: relative;
-    z-index: 10;
-}
-
-.aboutBtn {
-    background-color: #FF7315;
-    padding-right: 15px;
-    border-radius: 50px;
-    padding: 8px 40px 8px 12px;
-    display: none;
-    left: -60px;
-    bottom: 0;
-    position: absolute;
-    font-size: 1.1rem;
-    z-index: -1;
-    color: white;
-}
-
-.aboutSvg:hover .aboutBtn {
-    display: block;
-}
-
-.aboutSvg {
-    float: right;
-    margin-right: 20px;
-    background-color: #FF7315;
-    border-radius: 50%;
-    padding: 8px 12px;
-    position: relative;
-    z-index: 10;
-}
-
-.workBtn {
-    background-color: #FF7315;
-    padding-right: 15px;
-    border-radius: 50px;
-    padding: 8px 40px 7px 12px;
-    display: none;
+    padding: 0 45px 0 12px;
+    display: flex;
+    align-items: center;
     left: -55px;
     bottom: 0;
     position: absolute;
     font-size: 1.1rem;
     z-index: -1;
     color: white;
+    height: 50px;
+    visibility: hidden;
+    transition: all .25s ease-in;
 }
 
-.workSvg:hover .workBtn {
-    display: block;
-}
-
-.workSvg {
-    float: right;
-    margin-right: 20px;
+.homeSvg{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #FF7315;
     border-radius: 50%;
-    padding: 8px 12px;
+}
+
+.homeLink:hover .homeBtn {
+    left: -60px;
+    visibility: visible;
+}
+
+.aboutLink {
+    float: right;
+    margin-right: 20px;
     position: relative;
     z-index: 10;
 }
 
-.workSvg svg {
-    margin-bottom: 3px;
-}
-
-.contactBtn {
+.aboutBtn {
     background-color: #FF7315;
-    padding-right: 15px;
     border-radius: 50px;
-    padding: 8px 40px 8px 12px;
-    display: none;
-    left: -75px;
+    padding: 0 45px 0 12px;
+    display: flex;
+    align-items: center;
+    left: -55px;
     bottom: 0;
     position: absolute;
     font-size: 1.1rem;
     z-index: -1;
     color: white;
+    height: 50px;
+    visibility: hidden;
+    transition: all .25s ease-in;
 }
 
-.contactSvg:hover .contactBtn {
-    display: block;
-}
-
-.contactSvg {
-    float: right;
-    margin-right: 20px;
+.aboutSvg{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #FF7315;
     border-radius: 50%;
-    padding: 8px 12px;
+}
+
+.aboutLink:hover .aboutBtn {
+    left: -60px;
+    visibility: visible;
+}
+
+.workLink {
+    float: right;
+    margin-right: 20px;
     position: relative;
     z-index: 10;
+}
+
+.workBtn {
+    background-color: #FF7315;
+    border-radius: 50px;
+    padding: 0 45px 0 12px;
+    display: flex;
+    align-items: center;
+    left: -50px;
+    bottom: 0;
+    position: absolute;
+    font-size: 1.1rem;
+    z-index: -1;
+    color: white;
+    height: 50px;
+    visibility: hidden;
+    transition: all .25s ease-in;
+}
+
+.workSvg{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF7315;
+    border-radius: 50%;
+}
+
+.workLink:hover .workBtn {
+    left: -55px;
+    visibility: visible;
+}
+
+.contactLink {
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.contactBtn {
+    background-color: #FF7315;
+    border-radius: 50px;
+    padding: 0 45px 0 12px;
+    display: flex;
+    align-items: center;
+    left: -70px;
+    bottom: 0;
+    position: absolute;
+    font-size: 1.1rem;
+    z-index: -1;
+    color: white;
+    height: 50px;
+    visibility: hidden;
+    transition: all .25s ease-in;
+}
+
+.contactSvg{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF7315;
+    border-radius: 50%;
+}
+
+.contactLink:hover .contactBtn {
+    left: -75px;
+    visibility: visible;
 }
 
 /* Home Styles */
