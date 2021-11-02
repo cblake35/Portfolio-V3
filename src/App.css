@@ -8,7 +8,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    position: sticky;
+    position: fixed;
     right: 0;
     top: 0;
 }
@@ -306,6 +306,60 @@
 .aboutMeInfo h2{
     color: #646464;
 }
+
+.aboutMeInfo a{
+    border: solid 2px #FF7315;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    text-decoration: none;
+    content: "";
+    clear: both;
+    display: table;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.aboutMeInfo a:hover .resumeDownload::after{
+    transform: translateX(0%);
+    box-shadow: 0 0 0 2px #FF7315;
+}
+
+.resumeDownload {
+    padding: 0 10px;
+    color: grey;
+    vertical-align: middle;
+    transition: all .250s ease-in;
+}
+
+.resumeDownload::after {
+    z-index: -1;
+    content: "";
+    display: block;
+    background-color: #FF7315;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    transform: translateX(100%);
+    transition: all .250s ease-in;
+}
+
+.resumeSvg svg {
+    font-size: 2rem;
+    padding: 4px;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #FF7315;
+    box-shadow: 0 0 0 1px #FF7315;
+}
+
+.aboutMeInfo a:hover .resumeDownload {
+    color: white;
+}
+
 .skillsTitleWrapper {
     margin-top: 40px !important;
     margin-bottom: 40px !important;
@@ -318,4 +372,8 @@
 
 .skillsTitle h2 {
     margin-bottom: 0;
+}
+
+.skillsList {
+    text-align: center;
 }
