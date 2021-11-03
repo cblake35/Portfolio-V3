@@ -303,11 +303,37 @@
     color: #FF7315;
 }
 
-.aboutMeInfo h2{
-    color: #646464;
+.aboutMeImg {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px !important;
 }
 
-.aboutMeInfo a{
+.aboutMeImg img{
+    width: 400px;
+    height: 350px;
+    box-shadow: -20px -20px #f4f4f3;
+    border-radius: 15px;
+}
+
+.aboutMeInfo {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px !important;
+}
+
+.aboutMeInfoWrapper {
+    width: 400px;
+    height: 100%;
+    position: relative;
+}
+
+.aboutMeInfoWrapper h2{
+    color: #646464;
+    margin-bottom: 15px;
+}
+
+.aboutMeInfoWrapper a{
     border: solid 2px #FF7315;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 20px;
@@ -316,12 +342,13 @@
     clear: both;
     display: table;
     text-transform: uppercase;
-    position: relative;
+    position: absolute;
+    bottom: 0;
     z-index: 10;
     overflow: hidden;
 }
 
-.aboutMeInfo a:hover .resumeDownload::after{
+.aboutMeInfoWrapper a:hover .resumeDownload::after{
     transform: translateX(0%);
     box-shadow: 0 0 0 2px #FF7315;
 }
@@ -360,8 +387,12 @@
     color: white;
 }
 
+.separator {
+    margin: 70px auto 60px;
+    width: 400px;
+}
+
 .skillsTitleWrapper {
-    margin-top: 40px !important;
     margin-bottom: 40px !important;
 }
 
@@ -372,8 +403,27 @@
 
 .skillsTitle h2 {
     margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.skillsListWrapper {
+    max-width: 1000px;
+    margin: 0 auto 40px !important;
 }
 
 .skillsList {
     text-align: center;
+    margin-bottom: 25px !important;
+    height: 100px;
+}
+
+.skillsList svg {
+    font-size: 4rem;
+    padding: 10px;
+    color: #FF7315;
+    transition: all .10s linear;
+}
+
+.skillsList svg:hover {
+    font-size: 4.5rem;
 }

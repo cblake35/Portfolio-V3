@@ -24,23 +24,28 @@ function About() {
                     <h1>About<span> Me</span></h1>
                 </Col>
             </Row>
-            <Row>
-                <Col className='aboutMeImg'>
+            <Row className='aboutMainWrapper'>
+                <Col md={6} className='aboutMeImg'>
                     <img src={profileImg} alt='Im Chris' />
                 </Col>
-                <Col className='aboutMeInfo'>
-                    <h2>Personal Info</h2>
-                    <p>Hello! My name is Chris and I enjoy solving problems and creating business solutions in the web.
-                        I've always been curious and intrigued on how software can assist us in our daily lives. Technology nowadays is a
-                        huge part of our livelihood and as an avid nerd, I want to contribute to make the world
-                        a better place, one web app at a time.
-                    </p>
-                    <a href={resume} download>
-                        <span className='resumeDownload'>Download Resume</span>
-                        <span className='resumeSvg'><IoMdDownload /></span>
-                    </a>
+                <Col md={6} className='aboutMeInfo'>
+                    <div className='aboutMeInfoWrapper'>
+                        <h2>Personal Info</h2>
+                        <p>Hello! My name is Chris and I enjoy solving problems and creating business solutions in the web.
+                            I've always been curious and intrigued on how software can assist us in our daily lives. Technology nowadays is a
+                            huge part of our livelihood and as an avid nerd, I want to contribute to make the world
+                            a better place, one web app at a time.
+                        </p>
+                        <a href={resume} download>
+                            <span className='resumeDownload'>Download Resume</span>
+                            <span className='resumeSvg'><IoMdDownload /></span>
+                        </a>
+                    </div>
                 </Col>
             </Row>
+
+            <hr className='separator' />
+
             <Row className='skillsTitleWrapper'>
                 <Col className='skillsTitle'>
                     <h2>
@@ -48,7 +53,7 @@ function About() {
                     </h2>
                 </Col>
             </Row>
-            <Row>
+            <Row className='skillsListWrapper'>
                 <Col md={3} className='skillsList'>
                     <FaReact />
                     <h5>React</h5>
