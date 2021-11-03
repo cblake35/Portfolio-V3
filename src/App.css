@@ -1,4 +1,5 @@
 /* Sidebar Styles */
+
 .routeWrapper {
     width: 100%;
     margin: 0;
@@ -193,6 +194,7 @@
 }
 
 /* Home Styles */
+
 .home {
     background-color: rgb(255, 255, 255);
     position: relative;
@@ -283,6 +285,7 @@
 }
 
 /* About Me Styles */
+
 .aboutMeTitleWrapper {
     margin-top: 60px !important;
     margin-bottom: 60px !important;
@@ -314,6 +317,11 @@
     height: 350px;
     box-shadow: -20px -20px #f4f4f3;
     border-radius: 15px;
+    transition: all .25s ease-in;
+}
+
+.aboutMeImg img:hover {
+    box-shadow: 20px 20px #FF7315;
 }
 
 .aboutMeInfo {
@@ -426,4 +434,61 @@
 
 .skillsList svg:hover {
     font-size: 4.5rem;
+}
+
+/* Work Styles */
+
+.workTitleWrapper {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+}
+
+.workTitle {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.workTitle h1 {
+    font-size: 3rem;
+    color: #646464;
+    margin-bottom: 0;
+}
+
+.workTitle span {
+    color: #FF7315;
+}
+
+.workListWrapper {
+    max-width: 1200px;
+    margin: auto !important;
+}
+
+.workList {
+    text-align: center;
+}
+
+.workList img{
+    width: 350px;
+    height: 225px;
+    border-radius: 15px;
+}
+
+.miniappTitleWrapper {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+}
+
+.miniappTitle {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.miniappTitle h2 {
+    font-size: 2rem;
+    color: #646464;
+    margin-bottom: 0;
+}
+
+.miniappList {
+    text-align: center;
 }
