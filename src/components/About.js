@@ -13,7 +13,8 @@ import { SiTypescript } from 'react-icons/si';
 import { FaBootstrap } from 'react-icons/fa';
 import { SiSequelize } from 'react-icons/si';
 import { SiPostman } from 'react-icons/si';
-import { IoLogoJavascript } from 'react-icons/io'
+import { IoLogoJavascript } from 'react-icons/io';
+import { GrHeroku } from 'react-icons/gr';
 
 function About() {
 
@@ -86,17 +87,21 @@ function About() {
                     <FaCss3Alt />
                     <h5>CSS</h5>
                 </Col>
-                <Col md={4} className='skillsList'>
+                <Col md={3} className='skillsList'>
                     <FaBootstrap />
                     <h5>Bootstrap</h5>
                 </Col>
-                <Col md={4} className='skillsList'>
+                <Col md={3} className='skillsList'>
                     <SiSequelize />
                     <h5>Sequelize</h5>
                 </Col>
-                <Col md={4} className='skillsList'>
+                <Col md={3} className='skillsList'>
                     <SiPostman />
                     <h5>Postman</h5>
+                </Col>
+                <Col md={3} className='skillsList'>
+                    <GrHeroku />
+                    <h5>Heroku</h5>
                 </Col>
             </Row>
         </Container>
