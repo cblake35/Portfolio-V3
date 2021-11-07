@@ -523,3 +523,183 @@
 .miniappList {
     text-align: center;
 }
+
+.modalTitle {
+    color: #FF7315;
+}
+
+.modalBody {
+    overflow-y: scroll;
+    height: 350px !important;
+    background-color: #F4F4F4;
+}
+
+.modalBody h6{
+    color: #232020;
+}
+
+.modalImg {
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 15px;
+}
+
+.siteDescription p{
+    font-size: .9rem;
+}
+
+.modalStackWrapper {
+    width: 100%;
+    margin: 0  !important;
+}
+
+.stackList {
+    padding: 0 !important;
+}
+
+.stackList h6 {
+    padding: 0 5px 0 0;
+}
+
+.stackList ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 !important;
+}
+
+.stackList li{
+    list-style-type: none;
+    padding: 0 8px 0 0;
+    font-size: .85rem;
+}
+
+.livesite {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #FF7315;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.livesite:hover {
+    color: #646464;
+}
+
+.githubRepo {
+    text-decoration: none;
+    display: inline-block;
+    color: #FF7315;
+    font-size: 2rem;
+}
+
+.githubRepo:hover {
+    color: #646464;
+}
+
+.demoLoginWrapper {
+    margin-bottom: 10px;
+}
+
+.demoLoginWrapper h6{
+    font-style: italic;
+    font-size: .85rem;
+    margin: 0;
+    color: #232020;
+}
+
+.demoLoginWrapper p {
+    font-style: italic;
+    font-size: .8rem;
+    margin: 0;
+}
+
+/* Contact Styles */
+
+#contactPageContainer {
+    max-width: 1200px;
+}
+
+.contactTitleWrapper {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+}
+
+.contactTitle {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contactTitle h1 {
+    font-size: 3rem;
+    color: #646464;
+    margin-bottom: 0;
+}
+
+.contactTitle span {
+    color: #FF7315;
+}
+
+.contactInfo svg {
+    color: #FF7315;
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+}
+
+.contactInfo p {
+    /* margin: 0; */
+}
+
+.contactForm button {
+    border: solid 2px #FF7315;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    text-decoration: none;
+    content: "";
+    clear: both;
+    display: table;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    padding: 0;
+}
+
+.contactMeSpan {
+    padding: 0 10px;
+    color: grey;
+    vertical-align: middle;
+    transition: all .250s ease-in;
+}
+
+.contactMeSpan::after {
+    z-index: -1;
+    content: "";
+    display: block;
+    background-color: #FF7315;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    transform: translateX(100%);
+    transition: all .250s ease-in;
+}
+
+.contactForm button:hover .contactMeSpan {
+    color: rgb(255, 255, 255);
+}
+
+.contactForm button:hover .contactMeSpan::after{
+    transform: translateX(0%);
+    box-shadow: 0 0 0 2px #FF7315;
+}
+
+.contactMeSvg svg {
+    font-size: 2rem;
+    padding: 4px;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #FF7315;
+    box-shadow: 0 0 0 1px #FF7315;
+}
