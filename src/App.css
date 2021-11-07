@@ -336,6 +336,10 @@
     position: relative;
 }
 
+.aboutMeInfoWrapper p {
+    color: #646464;
+}
+
 .aboutMeInfoWrapper h2{
     color: #646464;
     margin-bottom: 15px;
@@ -436,6 +440,10 @@
     font-size: 4.5rem;
 }
 
+.skillsList h5 {
+    color: #646464;
+}
+
 /* Work Styles */
 
 .workTitleWrapper {
@@ -467,6 +475,7 @@
     text-align: center;
     position: relative;
     padding: 0 20px !important;
+    overflow: hidden;
 }
 
 .workList img{
@@ -476,19 +485,19 @@
 }
 
 .workList:hover .projectTitleOverlay {
-    display: inline-block;
+    bottom: 0;
     cursor: pointer;
 }
 
 .projectTitleOverlay {
     position: absolute;
-    bottom: 0;
-    left:0;
+    bottom: 100%;
+    left: 0;
     padding: 0 20px;
     width: 100%;
     height: 100%;
     margin-bottom: 0;
-    display: none;
+    transition: all 300ms ease;
 }
 
 .projectTitleOverlay p {
@@ -640,14 +649,18 @@
     color: #FF7315;
 }
 
+.contactInfo h3 {
+    color: #646464
+}
+
 .contactInfo svg {
     color: #FF7315;
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-bottom: 4px;
 }
 
-.contactInfo p {
-    /* margin: 0; */
+.contactInfo h5 {
+    color: #646464;
 }
 
 .contactForm button {
@@ -695,9 +708,18 @@
     box-shadow: 0 0 0 2px #FF7315;
 }
 
+.form-control {
+    border-radius: 25px !important;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 3px 3px #FF7315 !important;
+    border: none !important;
+}
+
 .contactMeSvg svg {
-    font-size: 2rem;
-    padding: 4px;
+    font-size: 2.2rem;
+    padding: 7px;
     color: #ffffff;
     border-radius: 50%;
     background-color: #FF7315;
@@ -707,6 +729,7 @@
 .emailSuccess {
     text-align: center;
     margin-top: 15px !important;
+    animation: slideFromBottom 500ms ease;
 }
 
 .emailSuccess p{
@@ -716,4 +739,15 @@
     margin: 0;
     color: white;
     text-transform: uppercase;
+}
+
+@keyframes slideFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
 }

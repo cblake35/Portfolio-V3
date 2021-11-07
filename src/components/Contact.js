@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import { RiMailSendLine } from 'react-icons/ri';
-import { FiSend } from 'react-icons/fi';
+import { AiOutlineSend } from 'react-icons/ai';
 import { useForm, ValidationError } from '@formspree/react';
 
 function Contact() {
@@ -21,14 +21,14 @@ function Contact() {
                         discuss creative ideas, or network. Feel free to get in touch
                         with me.
                     </p>
-                    <p><RiMailSendLine /> cblake2335@gmail.com</p>
+                    <h5><RiMailSendLine /> cblake2335@gmail.com</h5>
                 </Col>
                 <Col md={9} className='contactForm'>
                     <Form onSubmit={handleSubmit}>
-                        <Row>
+                        <Row className='formContentWrapper'>
                             <Form.Group md={4} as={Col} className='contactFormName mb-3' controlId='formcontrol1'>
                                 <Form.Label>FULL NAME</Form.Label>
-                                <Form.Control name='fullname' placeholder='First and Last' required />
+                                <Form.Control type='text' name='fullname' placeholder='First and Last' required />
                                 <ValidationError prefix='Full Name' field='fullname' errors={state.errors} />
                             </Form.Group>
                             <Form.Group md={4} as={Col} className='contactFormEmail mb-3' controlId='formcontrol2'>
@@ -38,7 +38,7 @@ function Contact() {
                             </Form.Group>
                             <Form.Group md={4} as={Col} className='contactFormSubject mb-3' controlId='formcontrol3'>
                                 <Form.Label>SUBJECT</Form.Label>
-                                <Form.Control  name='subject' placeholder='Subject' required />
+                                <Form.Control type='text' name='subject' placeholder='Subject' required />
                                 <ValidationError prefix='Subject' field='subject' errors={state.errors} />
                             </Form.Group>
                             <Form.Group md={12} as={Col} className='contactFormMsg mb-3' controlId='formcontrol4'>
@@ -50,16 +50,18 @@ function Contact() {
                                 <Col>
                                     <button type='submit' disabled={state.submitting}>
                                         <span className='contactMeSpan'>Contact Me</span>
-                                        <span className='contactMeSvg'><FiSend /></span>
+                                        <span className='contactMeSvg'><AiOutlineSend /></span>
                                     </button>
                                 </Col>
                             </Form.Group>
-                            {state.succeeded ?
-                                <Col className='emailSuccess' md={12} >
-                                    <p>Email Sent!</p>
-                                </Col>
-                                :
-                                undefined
+                            {
+                                state.succeeded
+                                    ?
+                                    <Col className='emailSuccess' md={12} >
+                                        <p>Email Sent!</p>
+                                    </Col>
+                                    :
+                                    undefined
                             }
                         </Row>
                     </Form>
