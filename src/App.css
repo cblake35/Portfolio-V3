@@ -703,3 +703,17 @@
     background-color: #FF7315;
     box-shadow: 0 0 0 1px #FF7315;
 }
+
+.emailSuccess {
+    text-align: center;
+    margin-top: 15px !important;
+}
+
+.emailSuccess p{
+    background-color: #FF7315;
+    border-radius: 50px;
+    padding: 5px 0;
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+}
