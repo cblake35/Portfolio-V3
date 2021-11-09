@@ -193,6 +193,27 @@
     visibility: visible;
 }
 
+.mobileNav {
+    position: absolute;
+    right: 0;
+}
+
+#navCanvas {
+    background-color: #f4f4f4;
+}
+
+.offcanvas-header {
+    justify-content: flex-end !important;
+}
+
+.navCanvasBody li {
+    list-style-type: none;
+}
+
+.mobileLinkWrapper {
+    text-decoration: none;
+}
+
 /* Home Styles */
 
 .home {

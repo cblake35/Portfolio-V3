@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Offcanvas } from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
@@ -8,9 +9,13 @@ import { FaHome } from 'react-icons/fa';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { BsBriefcaseFill } from 'react-icons/bs';
 import { BsEnvelopeOpenFill } from 'react-icons/bs';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 function Sidebar() {
+    const [show, setShow] = useState(false);
 
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return (
         <div className='home'>
@@ -58,6 +63,48 @@ function Sidebar() {
                             </Link>
                         </li>
                     </ul>
+                </div>
+
+                <div className='mobileNav'>
+                    <button onClick={(e) => handleShow()}>
+                        <GiHamburgerMenu />
+                    </button>
+
+                    <Offcanvas id='navCanvas' show={show} onHide={(e) => handleClose()}>
+                        <Offcanvas.Header closeButton></Offcanvas.Header>
+                        <Offcanvas.Body className='navCanvasBody'>
+                            <ul>
+                                <li>
+                                    <Link to='/' onClick={(e) => handleClose()} className='mobileLinkWrapper'>
+                                        <div className='mobileHomeLink'>
+                                            <p><span><FaHome /></span>Home</p>
+                                        </div>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/about' onClick={(e) => handleClose()} className='mobileLinkWrapper'>
+                                        <div className='mobileAboutLink'>
+                                            <p><span><BsFillPersonFill /></span>About</p>
+                                        </div>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/work' onClick={(e) => handleClose()} className='mobileLinkWrapper'>
+                                        <div className='mobileWorkLink'>
+                                            <p><span><BsBriefcaseFill /></span>Work</p>
+                                        </div>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/contact' onClick={(e) => handleClose()} className='mobileLinkWrapper'>
+                                        <div className='mobileContactLink'>
+                                            <p><span><BsEnvelopeOpenFill /></span>contactBtn</p>
+                                        </div>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </Offcanvas.Body>
+                    </Offcanvas>
                 </div>
             </Router>
         </div>
