@@ -98,7 +98,7 @@ function Sidebar() {
                                 <li>
                                     <Link to='/contact' onClick={(e) => handleClose()} className='mobileLinkWrapper'>
                                         <div className='mobileContactLink'>
-                                            <p><span><BsEnvelopeOpenFill /></span>contactBtn</p>
+                                            <p><span><BsEnvelopeOpenFill /></span>Contact</p>
                                         </div>
                                     </Link>
                                 </li>

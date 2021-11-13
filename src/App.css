@@ -199,19 +199,37 @@
 }
 
 #navCanvas {
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 .offcanvas-header {
     justify-content: flex-end !important;
 }
 
+.navCanvasBody ul {
+    padding: 0;
+}
+
 .navCanvasBody li {
     list-style-type: none;
+    border-bottom: 1px solid #F4F4F4 !important;
+    margin-bottom: 10px;
 }
 
 .mobileLinkWrapper {
     text-decoration: none;
+    display: inline-block;
+}
+
+.mobileLinkWrapper p {
+    font-size: 1.5rem;
+    color: #FF7315;
+    margin: 0;
+}
+
+.mobileLinkWrapper svg {
+    margin-bottom: 5px;
+    margin-right: 8px;
 }
 
 /* Home Styles */
