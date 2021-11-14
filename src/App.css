@@ -198,6 +198,26 @@
     right: 0;
 }
 
+.mobileNav button {
+    border: 1px solid #c9c9c9;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    margin: 10px 10px 0 0;
+}
+
+.mobileNav button:hover svg {
+    color: #FF7315;
+}
+
+.mobileNav button:hover {
+    box-shadow: 0 0 5px -1px #646464;
+}
+
+.mobileNav svg {
+    font-size: 2rem;
+    color: #646464;
+}
+
 #navCanvas {
     background-color: white;
 }
@@ -790,3 +810,10 @@
         opacity: 100%;
     }
 }
+
+/* Responsiveness Styles */
+
+@media only screen and (max-width: 1000px) {
+    
+    
+  }
