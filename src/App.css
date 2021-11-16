@@ -5,6 +5,39 @@
     margin: 0;
 }
 
+.socialMediaLinks {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 30px;
+}
+
+.socialMediaLinks a{
+    margin: 10px 0;
+    background-color: #FF7315;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.socialMediaLinks svg{
+    font-size: 1.5rem;
+    color: white;
+    transition: all 250ms ease;
+}
+
+/* CONTINUE STYLING HERE */
+.socialMediaLinks svg:hover {
+    /* box-shadow: 0 0 5px 1px #646464 ;
+    font-size: 1.75rem; */
+}
+
+.socialMediaLinks p {
+    border-left: 2px solid #646464;
+    height: 100px;
+    margin: 0 0 0 10px;
+}
+
 .sidebar {
     height: 100vh;
     display: flex;
@@ -196,6 +229,7 @@
 .mobileNav {
     position: absolute;
     right: 0;
+    display: none;
 }
 
 .mobileNav button {
@@ -815,5 +849,12 @@
 
 @media only screen and (max-width: 1000px) {
     
-    
+    .sidebar {
+        display: none;
+    }
+
+    .mobileNav {
+        display: block;
+    }
+
   }

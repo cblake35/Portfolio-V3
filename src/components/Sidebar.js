@@ -10,6 +10,9 @@ import { BsFillPersonFill } from 'react-icons/bs';
 import { BsBriefcaseFill } from 'react-icons/bs';
 import { BsEnvelopeOpenFill } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { FiGithub } from 'react-icons/fi';
+import { AiOutlineTwitter } from 'react-icons/ai';
 
 function Sidebar() {
     const [show, setShow] = useState(false);
@@ -20,6 +23,12 @@ function Sidebar() {
     return (
         <div className='home'>
             <Router>
+                <div className='socialMediaLinks'>
+                    <a href='https://www.linkedin.com/in/cblake35/' target='_blank' rel='noreferrer'><FaLinkedinIn /></a>
+                    <a href='https://github.com/cblake35' target='_blank' rel='noreferrer'><FiGithub /></a>
+                    <a href='https://twitter.com/CBlakeDev' target='_blank' rel='noreferrer'><AiOutlineTwitter /></a>
+                    <p></p>
+                </div>
                 <div className='routeWrapper'>
                     <Switch>
                         <Route exact path='/'><Home /></Route>
