@@ -8,34 +8,38 @@
 .socialMediaLinks {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 40px;
     position: fixed;
     bottom: 0;
     left: 30px;
 }
 
 .socialMediaLinks a{
+    position: relative;
     margin: 10px 0;
-    background-color: #FF7315;
+    background-color: grey;
     border-radius: 50%;
-    padding: 5px;
+    padding: 6px 8px;
+    transition: all 250ms ease;
 }
 
 .socialMediaLinks svg{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     transition: all 250ms ease;
 }
 
-/* CONTINUE STYLING HERE */
-.socialMediaLinks svg:hover {
-    /* box-shadow: 0 0 5px 1px #646464 ;
-    font-size: 1.75rem; */
+.socialMediaLinks a:hover {
+   top: -5px;
+   background-color: #FF7315;
+   box-shadow: 0 0 5px 0px #bbbbbb;
 }
 
 .socialMediaLinks p {
-    border-left: 2px solid #646464;
+    border-left: 2px solid grey;
     height: 100px;
-    margin: 0 0 0 10px;
+    margin: 0;
 }
 
 .sidebar {
@@ -100,13 +104,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FF7315;
+    background-color: grey;
     border-radius: 50%;
+    transition: all .15s ease-in;
 }
 
 .homeLink:hover .homeBtn {
     left: -60px;
     visibility: visible;
+    box-shadow: 0 0 5px 0px #bbbbbb;
+}
+
+.homeLink:hover .homeSvg {
+    background-color: #FF7315;
 }
 
 .aboutLink {
@@ -139,13 +149,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FF7315;
+    background-color: grey;
     border-radius: 50%;
+    transition: all .15s ease-in;
 }
 
 .aboutLink:hover .aboutBtn {
     left: -60px;
     visibility: visible;
+    box-shadow: 0 0 5px 0px #bbbbbb;
+}
+
+.aboutLink:hover .aboutSvg {
+    background-color: #FF7315;
 }
 
 .workLink {
@@ -178,13 +194,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FF7315;
+    background-color: grey;
     border-radius: 50%;
+    transition: all .15s ease-in;
 }
 
 .workLink:hover .workBtn {
     left: -55px;
     visibility: visible;
+    box-shadow: 0 0 5px 0px #bbbbbb;
+}
+
+.workLink:hover .workSvg {
+    background-color: #FF7315;
 }
 
 .contactLink {
@@ -217,13 +239,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FF7315;
+    background-color: grey;
     border-radius: 50%;
+    transition: all .15s ease-in;
 }
 
 .contactLink:hover .contactBtn {
     left: -75px;
     visibility: visible;
+    box-shadow: 0 0 5px 0px #bbbbbb;
+}
+
+.contactLink:hover .contactSvg {
+    background-color: #FF7315;
 }
 
 .mobileNav {
@@ -855,6 +883,10 @@
 
     .mobileNav {
         display: block;
+    }
+
+    .socialMediaLinks {
+        display: none;
     }
 
   }
