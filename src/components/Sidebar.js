@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { Offcanvas } from 'react-bootstrap';
-import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
+import { Offcanvas, Row, Col } from 'react-bootstrap';
+import { BrowserRouter as Router, Switch, NavLink, Route } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Work from './Work';
@@ -40,36 +40,36 @@ function Sidebar() {
                 <div className='sidebar'>
                     <ul>
                         <li>
-                            <Link to='/' className='linkWrapper'>
+                            <NavLink exact to='/' className='linkWrapper' activeClassName="active">
                                 <div className='homeLink'>
                                     <div className='homeBtn'>Home</div>
                                     <div className='homeSvg'><FaHome /></div>
                                 </div>
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link to='/about' className='linkWrapper'>
+                            <NavLink to='/about' className='linkWrapper' activeClassName="active">
                                 <div className='aboutLink'>
                                     <div className='aboutBtn'>About</div>
                                     <div className='aboutSvg'><BsFillPersonFill /></div>
                                 </div>
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link to='/work' className='linkWrapper'>
+                            <NavLink to='/work' className='linkWrapper' activeClassName="active">
                                 <div className='workLink'>
                                     <div className='workBtn'>Work</div>
                                     <div className='workSvg'><BsBriefcaseFill /></div>
                                 </div>
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link to='/contact' className='linkWrapper'>
+                            <NavLink to='/contact' className='linkWrapper' activeClassName='active'>
                                 <div className='contactLink'>
                                     <div className='contactBtn'>Contact</div>
                                     <div className='contactSvg'><BsEnvelopeOpenFill /></div>
                                 </div>
-                            </Link>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
@@ -84,34 +84,45 @@ function Sidebar() {
                         <Offcanvas.Body className='navCanvasBody'>
                             <ul>
                                 <li>
-                                    <Link to='/' onClick={(e) => handleClose()} className='mobileLinkWrapper'>
+                                    <NavLink exact to='/' onClick={(e) => handleClose()} className='mobileLinkWrapper' activeClassName='activeNav'>
                                         <div className='mobileHomeLink'>
                                             <p><span><FaHome /></span>Home</p>
                                         </div>
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <Link to='/about' onClick={(e) => handleClose()} className='mobileLinkWrapper'>
+                                    <NavLink to='/about' onClick={(e) => handleClose()} className='mobileLinkWrapper' activeClassName='activeNav'>
                                         <div className='mobileAboutLink'>
                                             <p><span><BsFillPersonFill /></span>About</p>
                                         </div>
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <Link to='/work' onClick={(e) => handleClose()} className='mobileLinkWrapper'>
+                                    <NavLink to='/work' onClick={(e) => handleClose()} className='mobileLinkWrapper' activeClassName='activeNav'>
                                         <div className='mobileWorkLink'>
                                             <p><span><BsBriefcaseFill /></span>Work</p>
                                         </div>
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <Link to='/contact' onClick={(e) => handleClose()} className='mobileLinkWrapper'>
+                                    <NavLink to='/contact' onClick={(e) => handleClose()} className='mobileLinkWrapper' activeClassName='activeNav'>
                                         <div className='mobileContactLink'>
                                             <p><span><BsEnvelopeOpenFill /></span>Contact</p>
                                         </div>
-                                    </Link>
+                                    </NavLink>
                                 </li>
                             </ul>
+                            <Row className='navMediaLinksRow'>
+                                <Col>
+                                    <a href='https://www.linkedin.com/in/cblake35/' target='_blank' rel='noreferrer'><FaLinkedinIn /></a>
+                                </Col>
+                                <Col>
+                                    <a href='https://github.com/cblake35' target='_blank' rel='noreferrer'><FiGithub /></a>
+                                </Col>
+                                <Col>
+                                    <a href='https://twitter.com/CBlakeDev' target='_blank' rel='noreferrer'><AiOutlineTwitter /></a>
+                                </Col>
+                            </Row>
                         </Offcanvas.Body>
                     </Offcanvas>
                 </div>

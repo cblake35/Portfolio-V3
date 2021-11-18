@@ -18,7 +18,7 @@
 .socialMediaLinks a{
     position: relative;
     margin: 10px 0;
-    background-color: grey;
+    background-color: #eee;
     border-radius: 50%;
     padding: 6px 8px;
     transition: all 250ms ease;
@@ -26,18 +26,22 @@
 
 .socialMediaLinks svg{
     font-size: 1.2rem;
-    color: white;
+    color: #666;
     transition: all 250ms ease;
 }
 
 .socialMediaLinks a:hover {
-   top: -5px;
+   top: -3px;
    background-color: #FF7315;
    box-shadow: 0 0 5px 0px #bbbbbb;
 }
 
+.socialMediaLinks a:hover svg {
+    color: white;
+}
+
 .socialMediaLinks p {
-    border-left: 2px solid grey;
+    border-left: 2px solid #666;
     height: 100px;
     margin: 0;
 }
@@ -70,9 +74,13 @@
 .sidebar svg {
     font-size: 1.25rem;
     margin-bottom: 4px;
-    color: white;
-
+    color: #666;
 }
+
+.active svg {
+    color: white;
+}
+
 
 .homeLink {
     float: right;
@@ -104,7 +112,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color: #eee;
     border-radius: 50%;
     transition: all .15s ease-in;
 }
@@ -118,6 +126,14 @@
 .homeLink:hover .homeSvg {
     background-color: #FF7315;
 }
+
+.homeLink:hover svg {
+    color: white;
+}
+
+.active .homeSvg{
+    background-color: #FF7315;
+ }
 
 .aboutLink {
     float: right;
@@ -149,7 +165,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color: #eee;
     border-radius: 50%;
     transition: all .15s ease-in;
 }
@@ -163,6 +179,14 @@
 .aboutLink:hover .aboutSvg {
     background-color: #FF7315;
 }
+
+.aboutLink:hover svg {
+    color: white;
+}
+
+.active .aboutSvg{
+    background-color: #FF7315;
+ }
 
 .workLink {
     float: right;
@@ -194,7 +218,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color: #eee;
     border-radius: 50%;
     transition: all .15s ease-in;
 }
@@ -207,7 +231,16 @@
 
 .workLink:hover .workSvg {
     background-color: #FF7315;
+    color: white;
 }
+
+.workLink:hover svg {
+    color: white;
+}
+
+.active .workSvg{
+    background-color: #FF7315;
+ }
 
 .contactLink {
     float: right;
@@ -239,7 +272,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color: #eee;
     border-radius: 50%;
     transition: all .15s ease-in;
 }
@@ -252,7 +285,16 @@
 
 .contactLink:hover .contactSvg {
     background-color: #FF7315;
+    color: white;
 }
+
+.contactLink:hover svg {
+    color: white;
+}
+
+.active .contactSvg{
+    background-color: #FF7315;
+ }
 
 .mobileNav {
     position: absolute;
@@ -262,7 +304,7 @@
 
 .mobileNav button {
     border: 1px solid #c9c9c9;
-    background-color: #F4F4F4;
+    background-color: #eee;
     border-radius: 5px;
     margin: 10px 10px 0 0;
 }
@@ -303,15 +345,63 @@
     display: inline-block;
 }
 
+.mobileLinkWrapper:hover p{
+    color: #FF7315;
+}
+
 .mobileLinkWrapper p {
     font-size: 1.5rem;
-    color: #FF7315;
+    color: #646464;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .mobileLinkWrapper svg {
     margin-bottom: 5px;
-    margin-right: 8px;
+    margin-right: 10px;
+    color: #646464;
+}
+
+.navMediaLinksRow {
+    text-align: center;
+    margin: 30px 20px !important;
+}
+
+.navMediaLinksRow svg {
+    font-size: 1.7rem;
+    color: #FF7315;
+}
+
+.activeNav .mobileHomeLink p{
+    color: #FF7315;
+}
+
+.activeNav .mobileHomeLink svg {
+    color: #FF7315;
+}
+
+.activeNav .mobileAboutLink p{
+    color: #FF7315;
+}
+
+.activeNav .mobileAboutLink svg {
+    color: #FF7315;
+}
+
+.activeNav .mobileWorkLink p{
+    color: #FF7315;
+}
+
+.activeNav .mobileWorkLink svg {
+    color: #FF7315;
+}
+
+.activeNav .mobileContactLink p{
+    color: #FF7315;
+}
+
+.activeNav .mobileContactLink svg {
+    color: #FF7315;
 }
 
 /* Home Styles */
@@ -889,4 +979,15 @@
         display: none;
     }
 
+    .homeImage {
+        display: none;
+    }
+
+    .intro {
+        position: inherit;
+        margin: auto;
+        padding: 170px 10px 0;
+        max-width: 400px;
+        width: revert;
+    }
   }
