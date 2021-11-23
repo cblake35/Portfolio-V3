@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Offcanvas, Row, Col } from 'react-bootstrap';
-import { BrowserRouter as Router, Switch, NavLink, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, NavLink, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Work from './Work';
@@ -13,6 +13,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
 import { AiOutlineTwitter } from 'react-icons/ai';
+import logoImage from '../assets/cblogo.png';
 
 function Sidebar() {
     const [show, setShow] = useState(false);
@@ -125,6 +126,9 @@ function Sidebar() {
                             </Row>
                         </Offcanvas.Body>
                     </Offcanvas>
+                </div>
+                <div className='logoWrapper'>
+                    <Link exact to='/'><img src={logoImage} alt='cb logo'></img></Link>
                 </div>
             </Router>
         </div>

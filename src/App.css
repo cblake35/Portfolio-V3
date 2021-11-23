@@ -298,7 +298,7 @@
 
 .mobileNav {
     position: absolute;
-    right: 0;
+    left: 0;
     display: none;
 }
 
@@ -306,11 +306,11 @@
     border: 1px solid #c9c9c9;
     background-color: #eee;
     border-radius: 5px;
-    margin: 10px 10px 0 0;
+    margin: 10px 0 0 20px;
 }
 
 .mobileNav button:hover svg {
-    color: #FF7315;
+    color: #ffa115;
 }
 
 .mobileNav button:hover {
@@ -319,7 +319,7 @@
 
 .mobileNav svg {
     font-size: 2rem;
-    color: #646464;
+    color: #FF7315;
 }
 
 #navCanvas {
@@ -404,6 +404,15 @@
     color: #FF7315;
 }
 
+.logoWrapper {
+    position: absolute;
+    right: 0;
+}
+
+.logoWrapper img {
+    width: 50px;
+    margin: 10px 20px 0 0
+}
 /* Home Styles */
 
 .home {
@@ -431,11 +440,13 @@
 .intro h1 {
     font-size: 3.5rem;
     color: #FF7315;
+    transition: all 250ms ease;
 }
 
 .intro h2 {
     color: #646464;
     text-transform: uppercase;
+    transition: all 250ms ease;
 }
 
 .intro a {
@@ -965,6 +976,25 @@
 
 /* Responsiveness Styles */
 
+@media only screen and (max-width: 500px) {
+    
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro h2 {
+        font-size: 1.14rem;
+    }
+
+    .aboutMeSpan {
+        font-size: .9rem;
+    }
+
+    .aboutMeSpan::after {
+        font-size: .9rem;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     
     .sidebar {
@@ -985,9 +1015,13 @@
 
     .intro {
         position: inherit;
-        margin: auto;
-        padding: 170px 10px 0;
-        max-width: 400px;
-        width: revert;
+        width: 100%;
+        background-image: linear-gradient(to bottom right, #ffffffe0, #ffffffeb), url(../src/assets/mobileHomeImage.png);
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
   }

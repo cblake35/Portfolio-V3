@@ -1,6 +1,7 @@
 import React from "react";
 import { MdArrowForward } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import mobileHomeImage from '../assets/mobileHomeImage.png';
 
 function Home() {
 
@@ -16,6 +17,9 @@ function Home() {
                     <span className='aboutMeSvg'><MdArrowForward /></span>
                 </Link>
             </div>
+            {/* <div>
+                <img src={mobileHomeImage} alt='laptop cartoon'></img>
+            </div> */}
         </div>
     )
 }
