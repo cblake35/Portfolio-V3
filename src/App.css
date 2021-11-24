@@ -1013,6 +1013,13 @@ body {
     }
 }
 
+@media only screen and (max-width: 767px) { 
+
+
+
+
+}
+
 @media only screen and (max-width: 1000px) {
     
     .sidebar {
@@ -1045,5 +1052,25 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    /* About Me */
+
+    .aboutMeImg {
+        padding: 25px;
+        align-items: center;
+    }
+
+    .aboutMeImg img {
+        width: 300px;
+        height: 275px;
+    }
+
+    .aboutMeInfo {
+        /* padding: 20px; */
+    }
+
+    .aboutMeInfoWrapper p {
+        padding-bottom: 35px;
     }
   }
