@@ -1,11 +1,13 @@
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './components/Sidebar'
+import Sidebar from './components/Sidebar';
 
 function App() {
+
   return (
     <div className="App">
-      <Home />
+      <Sidebar />
     </div>
   );
 }

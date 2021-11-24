@@ -1,7 +1,6 @@
 import React from "react";
 import { MdArrowForward } from 'react-icons/md';
 import { Link } from 'react-router-dom';
-import mobileHomeImage from '../assets/mobileHomeImage.png';
 
 function Home() {
 

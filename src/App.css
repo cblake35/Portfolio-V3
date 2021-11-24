@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap');
+
+/* Body Styels */
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
 /* Sidebar Styles */
 
 .routeWrapper {
@@ -21,6 +29,7 @@
     background-color: #eee;
     border-radius: 50%;
     padding: 6px 8px;
+    top: 0;
     transition: all 250ms ease;
 }
 
@@ -33,7 +42,6 @@
 .socialMediaLinks a:hover {
    top: -3px;
    background-color: #FF7315;
-   box-shadow: 0 0 5px 0px #bbbbbb;
 }
 
 .socialMediaLinks a:hover svg {
@@ -43,7 +51,7 @@
 .socialMediaLinks p {
     border-left: 2px solid #666;
     height: 100px;
-    margin: 0;
+    margin: 10px 0 0 0;
 }
 
 .sidebar {
@@ -95,7 +103,7 @@
     padding: 0 45px 0 12px;
     display: flex;
     align-items: center;
-    left: -55px;
+    left: -60px;
     bottom: 0;
     position: absolute;
     font-size: 1.1rem;
@@ -118,9 +126,8 @@
 }
 
 .homeLink:hover .homeBtn {
-    left: -60px;
+    left: -65px;
     visibility: visible;
-    box-shadow: 0 0 5px 0px #bbbbbb;
 }
 
 .homeLink:hover .homeSvg {
@@ -148,7 +155,7 @@
     padding: 0 45px 0 12px;
     display: flex;
     align-items: center;
-    left: -55px;
+    left: -60px;
     bottom: 0;
     position: absolute;
     font-size: 1.1rem;
@@ -171,9 +178,8 @@
 }
 
 .aboutLink:hover .aboutBtn {
-    left: -60px;
+    left: -65px;
     visibility: visible;
-    box-shadow: 0 0 5px 0px #bbbbbb;
 }
 
 .aboutLink:hover .aboutSvg {
@@ -201,7 +207,7 @@
     padding: 0 45px 0 12px;
     display: flex;
     align-items: center;
-    left: -50px;
+    left: -53px;
     bottom: 0;
     position: absolute;
     font-size: 1.1rem;
@@ -224,9 +230,8 @@
 }
 
 .workLink:hover .workBtn {
-    left: -55px;
+    left: -58px;
     visibility: visible;
-    box-shadow: 0 0 5px 0px #bbbbbb;
 }
 
 .workLink:hover .workSvg {
@@ -255,7 +260,7 @@
     padding: 0 45px 0 12px;
     display: flex;
     align-items: center;
-    left: -70px;
+    left: -80px;
     bottom: 0;
     position: absolute;
     font-size: 1.1rem;
@@ -278,9 +283,8 @@
 }
 
 .contactLink:hover .contactBtn {
-    left: -75px;
+    left: -85px;
     visibility: visible;
-    box-shadow: 0 0 5px 0px #bbbbbb;
 }
 
 .contactLink:hover .contactSvg {
@@ -306,7 +310,7 @@
     border: 1px solid #c9c9c9;
     background-color: #eee;
     border-radius: 5px;
-    margin: 10px 0 0 20px;
+    margin: 10px 0 0 10px;
 }
 
 .mobileNav button:hover svg {
@@ -426,7 +430,7 @@
     background-size: cover;
     height: 100vh;
     width: 100%;
-    clip-path: polygon(0 0, 19% 0, 65% 100%, 25% 100%, 0 20%);
+    clip-path: polygon(0 0, 19% 0, 60% 100%, 20% 100%, 0 20%);
 }
 
 .intro {
@@ -439,12 +443,14 @@
 
 .intro h1 {
     font-size: 3.5rem;
+    font-weight: 700;
     color: #FF7315;
     transition: all 250ms ease;
 }
 
 .intro h2 {
     color: #646464;
+    font-weight: 600;
     text-transform: uppercase;
     transition: all 250ms ease;
 }
@@ -519,6 +525,7 @@
 }
 
 .aboutMeTitle h1 {
+    font-weight: 700;
     font-size: 3rem;
     color: #646464;
     margin-bottom: 0;
@@ -563,6 +570,7 @@
 }
 
 .aboutMeInfoWrapper h2{
+    font-weight: 600;
     color: #646464;
     margin-bottom: 15px;
 }
@@ -636,6 +644,7 @@
 }
 
 .skillsTitle h2 {
+    font-weight: 600;
     margin-bottom: 0;
     text-transform: uppercase;
 }
@@ -679,6 +688,7 @@
 }
 
 .workTitle h1 {
+    font-weight: 700;
     font-size: 3rem;
     color: #646464;
     margin-bottom: 0;
@@ -729,9 +739,10 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    font-weight: 600;
     border-radius: 15px;
-    color: #232020;
-    background-image: linear-gradient(to bottom right, #ff7315f0, #ffe15deb);
+    color: #ffffff;
+    background-image: linear-gradient(to bottom right, #ff6600f0, #ffaf1bf2);
 ;
 }
 
@@ -862,6 +873,7 @@
 }
 
 .contactTitle h1 {
+    font-weight: 700;
     font-size: 3rem;
     color: #646464;
     margin-bottom: 0;
@@ -872,6 +884,7 @@
 }
 
 .contactInfo h3 {
+    font-weight: 600;
     color: #646464
 }
 
@@ -882,6 +895,7 @@
 }
 
 .contactInfo h5 {
+    font-weight: 500;
     color: #646464;
 }
 
@@ -937,6 +951,10 @@
 .form-control:focus {
     box-shadow: 0 0 3px 3px #FF7315 !important;
     border: none !important;
+}
+
+.form-label {
+    font-weight: 500 !important;
 }
 
 .contactMeSvg svg {
@@ -1003,6 +1021,10 @@
 
     .mobileNav {
         display: block;
+    }
+
+    .logoWrapper img {
+        margin: 10px 10px 0 0;
     }
 
     .socialMediaLinks {
