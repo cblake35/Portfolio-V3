@@ -18,26 +18,26 @@ function Work() {
     const handleShowThree = () => setShowThree(true);
 
     return (
-        <Container>
+        <Container className='workPageWrapper'>
             <Row className='workTitleWrapper'>
                 <Col className='workTitle'>
                     <h1>Featured<span> Work</span></h1>
                 </Col>
             </Row>
             <Row className='workListWrapper'>
-                <Col md={4} className='workList'>
+                <Col sm={6} lg={4} className='workList'>
                     <img src={neighborhub} alt='NeighborHub App' />
                     <div className='projectTitleOverlay' onClick={(e) => handleShowOne()}>
                         <p>NeighborHUB</p>
                     </div>
                 </Col>
-                <Col md={4} className='workList'>
+                <Col sm={6} lg={4} className='workList'>
                     <img src={ecommerce} alt='Ecommerce Website' />
                     <div className='projectTitleOverlay' onClick={(e) => handleShowTwo()}>
                         <p>Bedder Way Co</p>
                     </div>
                 </Col>
-                <Col md={4} className='workList'>
+                <Col sm={6} lg={4}  className='workList'>
                     <img src={flixdb} alt='FlixDB App' />
                     <div className='projectTitleOverlay' onClick={(e) => handleShowThree()}>
                         <p>FlixDB</p>
