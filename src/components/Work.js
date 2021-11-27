@@ -34,7 +34,7 @@ function Work() {
                 <Col sm={6} lg={4} className='workList'>
                     <img src={ecommerce} alt='Ecommerce Website' />
                     <div className='projectTitleOverlay' onClick={(e) => handleShowTwo()}>
-                        <p>Bedder Way Co</p>
+                        <p>Bedder Way</p>
                     </div>
                 </Col>
                 <Col sm={6} lg={4}  className='workList'>
@@ -130,7 +130,7 @@ const MyModals = (props) => {
 
             <Modal show={props.showTwo} onHide={props.handleCloseTwo}>
                 <Modal.Header closeButton>
-                    <Modal.Title className='modalTitle'>Bedder Way Co</Modal.Title>
+                    <Modal.Title className='modalTitle'>Bedder Way</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className='modalBody'>
                     <img className='modalImg' src={ecommerce} alt='NeighborHub App' />

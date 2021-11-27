@@ -537,7 +537,7 @@ body {
 
 .aboutMeImg {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding-right: 15px !important;
 }
 
@@ -858,10 +858,6 @@ body {
 
 /* Contact Styles */
 
-#contactPageContainer {
-    max-width: 1200px;
-}
-
 .contactTitleWrapper {
     margin-top: 60px !important;
     margin-bottom: 40px !important;
@@ -883,6 +879,10 @@ body {
     color: #FF7315;
 }
 
+.contactInfo {
+    padding-right: 20px !important;
+}
+
 .contactInfo h3 {
     font-weight: 600;
     color: #646464
@@ -895,8 +895,13 @@ body {
 }
 
 .contactInfo h5 {
-    font-weight: 500;
+    font-weight: 600;
     color: #646464;
+    font-size: 1rem;
+}
+
+.contactForm {
+    padding-left: 20px !important;
 }
 
 .contactForm button {
@@ -954,7 +959,8 @@ body {
 }
 
 .form-label {
-    font-weight: 500 !important;
+    font-weight: 600 !important;
+    color: #646464 !important;
 }
 
 .contactMeSvg svg {
@@ -1022,7 +1028,7 @@ body {
     
 }
 
-@media only screen and (max-width: 767px) { 
+@media only screen and (max-width: 768px) { 
 
     /* About Page */
     .aboutMeTitleWrapper {
@@ -1054,9 +1060,15 @@ body {
         margin: 75px 0 25px 0  !important;
     }
 
+    /* Contact Page */
+
+    .contactTitleWrapper {
+        margin: 75px 0 25px 0  !important;
+    }
+
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
     
     .sidebar {
         display: none;
@@ -1105,9 +1117,21 @@ body {
     .aboutMeInfoWrapper p {
         padding-bottom: 35px;
     }
+
+    /* Contact Page */
+
+    .contactInfo {
+        padding: 0 20px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .contactForm {
+        padding: 0 20px !important;
+        margin-bottom: 25px !important;
+    }
   }
 
-  @media only screen and (min-width: 993px) {
+  @media only screen and (min-width: 992px) {
 
     /* About Page */
     .aboutPageWrapper {
@@ -1119,5 +1143,9 @@ body {
         padding: 0 50px !important;
     }
 
+    /* Contact Page */
+    .contactPageWrapper {
+        padding: 0 75px !important;
+    }
     
   }

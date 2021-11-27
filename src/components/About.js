@@ -55,51 +55,51 @@ function About() {
                 </Col>
             </Row>
             <Row className='skillsListWrapper'>
-                <Col xs={6} md={3} className='skillsList'>
+                <Col xs={6} sm={4} md={3} className='skillsList'>
                     <FaReact />
                     <h5>React</h5>
                 </Col>
-                <Col xs={6} md={3} className='skillsList'>
+                <Col xs={6} sm={4} md={3} className='skillsList'>
                     <IoLogoJavascript />
                     <h5>JavaScript</h5>
                 </Col>
-                <Col xs={6} md={3} className='skillsList'>
+                <Col xs={6} sm={4} md={3} className='skillsList'>
                     <SiPostgresql />
                     <h5>Postgres</h5>
                 </Col>
-                <Col xs={6} md={3} className='skillsList'>
+                <Col xs={6} sm={4} md={3} className='skillsList'>
                     <SiTypescript />
                     <h5>TypeScript</h5>
                 </Col>
-                <Col xs={6} md={3} className='skillsList'>
+                <Col xs={6} sm={4} md={3} className='skillsList'>
                     <FaNodeJs />
                     <h5>Node</h5>
                 </Col>
-                <Col xs={6} md={3} className='skillsList'>
+                <Col xs={6} sm={4} md={3} className='skillsList'>
                     <SiExpress />
                     <h5>Express</h5>
                 </Col>
-                <Col xs={6} md={3} className='skillsList'>
+                <Col xs={6} sm={4} md={3} className='skillsList'>
                     <AiFillHtml5 />
                     <h5>HTML</h5>
                 </Col>
-                <Col xs={6} md={3} className='skillsList'>
+                <Col xs={6} sm={4} md={3} className='skillsList'>
                     <FaCss3Alt />
                     <h5>CSS</h5>
                 </Col>
-                <Col xs={6} md={3} className='skillsList'>
+                <Col xs={6} sm={4} md={3} className='skillsList'>
                     <FaBootstrap />
                     <h5>Bootstrap</h5>
                 </Col>
-                <Col xs={6} md={3} className='skillsList'>
+                <Col xs={6} sm={4} md={3} className='skillsList'>
                     <SiSequelize />
                     <h5>Sequelize</h5>
                 </Col>
-                <Col xs={6} md={3} className='skillsList'>
+                <Col xs={6} sm={4} md={3} className='skillsList'>
                     <SiPostman />
                     <h5>Postman</h5>
                 </Col>
-                <Col xs={6} md={3} className='skillsList'>
+                <Col xs={6} sm={4} md={3} className='skillsList'>
                     <GrHeroku />
                     <h5>Heroku</h5>
                 </Col>

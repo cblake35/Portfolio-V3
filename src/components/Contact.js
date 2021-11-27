@@ -8,14 +8,14 @@ function Contact() {
     const [state, handleSubmit] = useForm('mgerjrng');
 
     return (
-        <Container id='contactPageContainer'>
+        <Container className='contactPageWrapper'>
             <Row className='contactTitleWrapper'>
                 <Col className='contactTitle'>
                     <h1>Get In<span> Touch</span></h1>
                 </Col>
             </Row>
             <Row className='contactContentWrapper'>
-                <Col md={3} className='contactInfo'>
+                <Col lg={4} className='contactInfo'>
                     <h3>Let's Connect</h3>
                     <p>I'm always looking for opportunities to work on new projects,
                         discuss creative ideas, or network. Feel free to get in touch
@@ -23,7 +23,7 @@ function Contact() {
                     </p>
                     <h5><RiMailSendLine /> cblake2335@gmail.com</h5>
                 </Col>
-                <Col md={9} className='contactForm'>
+                <Col lg={8} className='contactForm'>
                     <Form onSubmit={handleSubmit}>
                         <Row className='formContentWrapper'>
                             <Form.Group md={4} as={Col} className='contactFormName mb-3' controlId='formcontrol1'>
