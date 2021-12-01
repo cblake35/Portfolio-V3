@@ -117,9 +117,9 @@ const MyModals = (props) => {
                             <h6>Site: </h6>
                             <a className='livesite' href='https://neighborhub-client.herokuapp.com/' target='_blank' rel='noreferrer'> NeighborHUB</a>
                             <div className='demoLoginWrapper'>
-                                <h6>Demo Login(Tenant/Admin)</h6>
-                                <p>Username: test1</p>
-                                <p>Password: Password1</p>
+                                <p>Demo Login(Tenant/Admin) -</p>
+                                <p>Username: 1@test.com</p>
+                                <p>Password: Password1!</p>
                             </div>
                             <a className='githubRepo' href='https://github.com/cblake35/NeighborHUB-Client' target='_blank' rel='noreferrer'><VscGithub /></a>
                         </Col>
@@ -157,7 +157,7 @@ const MyModals = (props) => {
                     <Row className='livesiteWrapper'>
                         <Col>
                             <h6>Site: </h6>
-                            <a className='livesite' href='https://bedderwayco.com/' target='_blank' rel='noreferrer'> Bedder Way Co</a>
+                            <a className='livesite' href='https://bedderwayco.com/' target='_blank' rel='noreferrer'> Bedder Way</a>
                         </Col>
                     </Row>
                 </Modal.Body>
@@ -198,9 +198,9 @@ const MyModals = (props) => {
                             <h6>Site: </h6>
                             <a className='livesite' href='https://flixdb-client.herokuapp.com/' target='_blank' rel='noreferrer'> FlixDB</a>
                             <div className='demoLoginWrapper'>
-                                <h6>Demo Login</h6>
-                                <p>Username: test1</p>
-                                <p>Password: Password1</p>
+                                <p>Demo Login -</p>
+                                <p>Username: 1@test.com</p>
+                                <p>Password: Password1!</p>
                             </div>
                             <a className='githubRepo' href='https://github.com/cblake35/FlixDB-Client' target='_blank' rel='noreferrer'><VscGithub /></a>
                         </Col>

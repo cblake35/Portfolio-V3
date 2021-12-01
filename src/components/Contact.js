@@ -28,8 +28,8 @@ function Contact() {
                         <Row className='formContentWrapper'>
                             <Form.Group md={4} as={Col} className='contactFormName mb-3' controlId='formcontrol1'>
                                 <Form.Label>FULL NAME</Form.Label>
-                                <Form.Control type='text' name='fullname' placeholder='First and Last' required />
-                                <ValidationError prefix='Full Name' field='fullname' errors={state.errors} />
+                                <Form.Control type='text' name='full name' placeholder='First and Last' required />
+                                <ValidationError prefix='Full Name' field='full name' errors={state.errors} />
                             </Form.Group>
                             <Form.Group md={4} as={Col} className='contactFormEmail mb-3' controlId='formcontrol2'>
                                 <Form.Label>EMAIL</Form.Label>

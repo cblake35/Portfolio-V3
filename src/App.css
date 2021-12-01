@@ -768,6 +768,7 @@ body {
 
 .modalTitle {
     color: #FF7315;
+    font-weight: 600 !important;
 }
 
 .modalBody {
@@ -778,6 +779,7 @@ body {
 
 .modalBody h6{
     color: #232020;
+    font-weight: 600;
 }
 
 .modalImg {
