@@ -5,12 +5,9 @@ import Home from './Home';
 import About from './About';
 import Work from './Work';
 import Contact from './Contact';
-import { FaHome } from 'react-icons/fa';
-import { BsFillPersonFill } from 'react-icons/bs';
-import { BsBriefcaseFill } from 'react-icons/bs';
-import { BsEnvelopeOpenFill } from 'react-icons/bs';
+import { FaHome, FaLinkedinIn } from 'react-icons/fa';
+import { BsFillPersonFill, BsBriefcaseFill, BsEnvelopeOpenFill } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { FaLinkedinIn } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import logoImage from '../assets/cblogo.png';
@@ -25,9 +22,8 @@ function Sidebar() {
         <div className='home'>
             <Router>
                 <div className='socialMediaLinks'>
-                    <a href='https://www.linkedin.com/in/cblake35/' target='_blank' rel='noreferrer'><FaLinkedinIn /></a>
-                    <a href='https://github.com/cblake35' target='_blank' rel='noreferrer'><FiGithub /></a>
-                    <a href='https://twitter.com/CBlakeDev' target='_blank' rel='noreferrer'><AiOutlineTwitter /></a>
+                    <a href='https://www.linkedin.com/in/cblakedev/' target='_blank' rel='noreferrer'><FaLinkedinIn /></a>
+                    <a href='https://github.com/cblakedev' target='_blank' rel='noreferrer'><FiGithub /></a>
                     <p></p>
                 </div>
                 <div className='routeWrapper'>

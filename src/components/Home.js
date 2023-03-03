@@ -10,9 +10,9 @@ function Home() {
             <div className='homeImage'></div>
             <div className='intro'>
                 <h1>HI, I'M CHRIS!</h1>
-                <h2>A Full-Stack Web Developer</h2>
+                <h2>A Full Stack Developer</h2>
                 <Link to='/about'>
-                    <span className='aboutMeSpan'>More about me</span>
+                    <span className='aboutMeSpan'>about me</span>
                     <span className='aboutMeSvg'><MdArrowForward /></span>
                 </Link>
             </div>
