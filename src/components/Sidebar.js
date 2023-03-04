@@ -9,7 +9,6 @@ import { FaHome, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonFill, BsBriefcaseFill, BsEnvelopeOpenFill } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FiGithub } from 'react-icons/fi';
-import { AiOutlineTwitter } from 'react-icons/ai';
 import logoImage from '../assets/cblogo.png';
 
 function Sidebar() {
