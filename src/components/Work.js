@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import { Container, Row, Col, Modal } from 'react-bootstrap';
 import neighborhub from '../assets/neighborhub.png';
 import ecommerce from '../assets/ecommerce.png';
-import flixdb from '../assets/flixdb.png';
-import { VscGithub } from 'react-icons/vsc'
+import bbo from '../assets/buybeeronline.png';
+import drinkrunnr from '../assets/drinkrunnr.png';
+import { VscGithub } from 'react-icons/vsc';
 
 function Work() {
     const [showOne, setShowOne] = useState(false);
     const [showTwo, setShowTwo] = useState(false);
     const [showThree, setShowThree] = useState(false);
+    const [showFour, setShowFour] = useState(false);
 
     const handleCloseOne = () => setShowOne(false);
     const handleShowOne = () => setShowOne(true);
@@ -16,6 +18,8 @@ function Work() {
     const handleShowTwo = () => setShowTwo(true);
     const handleCloseThree = () => setShowThree(false);
     const handleShowThree = () => setShowThree(true);
+    const handleCloseFour = () => setShowFour(false);
+    const handleShowFour = () => setShowFour(true);
 
     return (
         <Container className='workPageWrapper'>
@@ -25,22 +29,28 @@ function Work() {
                 </Col>
             </Row>
             <Row className='workListWrapper'>
+                <Col sm={6} lg={4}  className='workList'>
+                    <img src={bbo} alt='Buy Beer Online App' />
+                    <div className='projectTitleOverlay' onClick={(e) => handleShowOne()}>
+                        <p>Buy Beer Online</p>
+                    </div>
+                </Col>
                 <Col sm={6} lg={4} className='workList'>
                     <img src={neighborhub} alt='NeighborHub App' />
-                    <div className='projectTitleOverlay' onClick={(e) => handleShowOne()}>
+                    <div className='projectTitleOverlay' onClick={(e) => handleShowTwo()}>
                         <p>NeighborHUB</p>
+                    </div>
+                </Col>
+                <Col sm={6} lg={4}  className='workList'>
+                    <img src={drinkrunnr} alt='DrinkrunnrUS App' />
+                    <div className='projectTitleOverlay' onClick={(e) => handleShowThree()}>
+                        <p>DrinkrunnrUS</p>
                     </div>
                 </Col>
                 <Col sm={6} lg={4} className='workList'>
                     <img src={ecommerce} alt='Ecommerce Website' />
-                    <div className='projectTitleOverlay' onClick={(e) => handleShowTwo()}>
+                    <div className='projectTitleOverlay' onClick={(e) => handleShowFour()}>
                         <p>Bedder Way</p>
-                    </div>
-                </Col>
-                <Col sm={6} lg={4}  className='workList'>
-                    <img src={flixdb} alt='FlixDB App' />
-                    <div className='projectTitleOverlay' onClick={(e) => handleShowThree()}>
-                        <p>FlixDB</p>
                     </div>
                 </Col>
             </Row>
@@ -49,6 +59,7 @@ function Work() {
                 showOne={showOne}
                 showTwo={showTwo}
                 showThree={showThree}
+                showFour={showFour}
 
                 handleCloseOne={handleCloseOne}
                 handleShowOne={handleShowOne}
@@ -56,24 +67,9 @@ function Work() {
                 handleShowTwo={handleShowTwo}
                 handleCloseThree={handleCloseThree}
                 handleShowThree={handleShowThree}
+                handleCloseFour={handleCloseFour}
+                handleShowFour={handleShowFour}
             />
-
-            {/* <Row className='miniappTitleWrapper'>
-                <Col className='miniappTitle'>
-                    <h2>Mini<span> Apps</span></h2>
-                </Col>
-            </Row>
-            <Row className='miniappWrapper'>
-                <Col md={4} className='miniappList'>
-                    mini app
-                </Col>
-                <Col md={4} className='miniappList'>
-                    mini app
-                </Col>
-                <Col md={4} className='miniappList'>
-                    mini app
-                </Col>
-            </Row> */}
         </Container>
     )
 }
@@ -81,8 +77,47 @@ function Work() {
 const MyModals = (props) => {
 
     return (
-        <>
+        <>  
             <Modal show={props.showOne} onHide={props.handleCloseOne}>
+                <Modal.Header closeButton>
+                    <Modal.Title className='modalTitle'>Buy Beer Online</Modal.Title>
+                </Modal.Header>
+                <Modal.Body className='modalBody'>
+                    <img className='modalImg' src={bbo} alt='Buy Beer Online App' />
+                    <Row className='siteDescriptionWrapper'>
+                        <Col className='siteDescription'>
+                            <h6>Info:</h6>
+                            <p>Buy Beer Online is a custom web platform built for Anheuser-Busch's craft brands to connect users to multiple retailers 
+                                for the product they love. This allowed brands to customize their brand pages, update their products online, and build
+                                unique campaigns.
+                            </p>
+                        </Col>
+                    </Row>
+                    <Row className='modalStackWrapper'>
+                        <Col className='stackList'>
+                            <h6>Stack:</h6>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Node</li>
+                                <li>Mocha</li>
+                                <li>AWS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </Col>
+                    </Row>
+                    <Row className='livesiteWrapper'>
+                        <Col>
+                            <h6>Site: </h6>
+                            <a className='livesite' href='https://www.buybeeronline.com/' target='_blank' rel='noreferrer'> Buy Beer Online</a>
+                        </Col>
+                    </Row>
+                </Modal.Body>
+                <Modal.Footer> </Modal.Footer>
+            </Modal>
+
+            <Modal show={props.showTwo} onHide={props.handleCloseTwo}>
                 <Modal.Header closeButton>
                     <Modal.Title className='modalTitle'>NeighborHUB</Modal.Title>
                 </Modal.Header>
@@ -91,9 +126,8 @@ const MyModals = (props) => {
                     <Row className='siteDescriptionWrapper'>
                         <Col className='siteDescription'>
                             <h6>Info:</h6>
-                            <p>A full-stack web app for residential communities. The purpose of this app is to create
-                                a localized social hub for communities to interact in. It also provides an intuitive
-                                ticketing system for residents and allows administrators to manage, track, and resolve each submitted ticket.
+                            <p>A full-stack web app for residential communities. This app creates a localized social hub for residential communities to interact in. 
+                                It also provides an intuitive ticketing system for residents and allows administrators to manage, track, and resolve each submitted ticket.
                                 This app features full CRUD functionality and role-based access control.
                             </p>
                         </Col>
@@ -118,17 +152,50 @@ const MyModals = (props) => {
                             <a className='livesite' href='https://neighborhub-client.herokuapp.com/' target='_blank' rel='noreferrer'> NeighborHUB</a>
                             <div className='demoLoginWrapper'>
                                 <p>Demo Login(Tenant/Admin) -</p>
-                                <p>Username: 1@test.com</p>
+                                <p>Username: user-test@mail.com</p>
                                 <p>Password: Password1!</p>
                             </div>
-                            <a className='githubRepo' href='https://github.com/cblake35/NeighborHUB-Client' target='_blank' rel='noreferrer'><VscGithub /></a>
+                            <a className='githubRepo' href='https://github.com/cblakedev/NeighborHUB-Client' target='_blank' rel='noreferrer'><VscGithub /></a>
                         </Col>
                     </Row>
                 </Modal.Body>
                 <Modal.Footer> </Modal.Footer>
             </Modal>
 
-            <Modal show={props.showTwo} onHide={props.handleCloseTwo}>
+            <Modal show={props.showThree} onHide={props.handleCloseThree}>
+                <Modal.Header closeButton>
+                    <Modal.Title className='modalTitle'>DrinkrunnrUS</Modal.Title>
+                </Modal.Header>
+                <Modal.Body className='modalBody'>
+                    <img className='modalImg' src={drinkrunnr} alt='DrinkrunnrUS' />
+                    <Row className='siteDescriptionWrapper'>
+                        <Col className='siteDescription'>
+                            <h6>Info:</h6>
+                            <p>DrinkrunnrUS is Anheuser-Busch's first legally 3-tier compliant eCommerce marketplace. The objective of this project is to 
+                                acquire valuable insights from first-party consumer data, to extract detailed and nuanced information about the user journey.
+                            </p>
+                        </Col>
+                    </Row>
+                    <Row className='modalStackWrapper'>
+                        <Col className='stackList'>
+                            <h6>Stack:</h6>
+                            <ul>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Flask</li>
+                                <li>Mocha</li>
+                                <li>AWS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </Col>
+                    </Row>
+                </Modal.Body>
+                <Modal.Footer> </Modal.Footer>
+            </Modal>
+
+            <Modal show={props.showFour} onHide={props.handleCloseFour}>
                 <Modal.Header closeButton>
                     <Modal.Title className='modalTitle'>Bedder Way</Modal.Title>
                 </Modal.Header>
@@ -149,6 +216,7 @@ const MyModals = (props) => {
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JavaScript</li>
+                                <li>Liquid</li>
                                 <li>Shopify</li>
                                 <li>Bootstrap</li>
                             </ul>
@@ -158,51 +226,6 @@ const MyModals = (props) => {
                         <Col>
                             <h6>Site: </h6>
                             <a className='livesite' href='https://bedderwayco.com/' target='_blank' rel='noreferrer'> Bedder Way</a>
-                        </Col>
-                    </Row>
-                </Modal.Body>
-                <Modal.Footer> </Modal.Footer>
-            </Modal>
-
-            <Modal show={props.showThree} onHide={props.handleCloseThree}>
-                <Modal.Header closeButton>
-                    <Modal.Title className='modalTitle'>FlixDB</Modal.Title>
-                </Modal.Header>
-                <Modal.Body className='modalBody'>
-                    <img className='modalImg' src={flixdb} alt='NeighborHub App' />
-                    <Row className='siteDescriptionWrapper'>
-                        <Col className='siteDescription'>
-                            <h6>Info:</h6>
-                            <p>A full-stack web app for browsing and reviewing popular movie titles. The app utilizes a PostgreSQL database
-                                to allow users to bookmark movies, search reviews from other users, and view their past reviews. This app feautures
-                                full CRUD functionality.
-                            </p>
-                        </Col>
-                    </Row>
-                    <Row className='modalStackWrapper'>
-                        <Col className='stackList'>
-                            <h6>Stack:</h6>
-                            <ul>
-                                <li>React</li>
-                                <li>PostgreSQL</li>
-                                <li>Node</li>
-                                <li>Express</li>
-                                <li>Heroku</li>
-                                <li>Bootstrap</li>
-                                <li>Movie Database API</li>
-                            </ul>
-                        </Col>
-                    </Row>
-                    <Row className='livesiteWrapper'>
-                        <Col>
-                            <h6>Site: </h6>
-                            <a className='livesite' href='https://flixdb-client.herokuapp.com/' target='_blank' rel='noreferrer'> FlixDB</a>
-                            <div className='demoLoginWrapper'>
-                                <p>Demo Login -</p>
-                                <p>Username: 1@test.com</p>
-                                <p>Password: Password1!</p>
-                            </div>
-                            <a className='githubRepo' href='https://github.com/cblake35/FlixDB-Client' target='_blank' rel='noreferrer'><VscGithub /></a>
                         </Col>
                     </Row>
                 </Modal.Body>

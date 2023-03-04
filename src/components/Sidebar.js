@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Offcanvas, Row, Col } from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, NavLink, Route, Link } from 'react-router-dom';
 import Home from './Home';
@@ -111,13 +111,10 @@ function Sidebar() {
                             </ul>
                             <Row className='navMediaLinksRow'>
                                 <Col>
-                                    <a href='https://www.linkedin.com/in/cblake35/' target='_blank' rel='noreferrer'><FaLinkedinIn /></a>
+                                    <a href='https://www.linkedin.com/in/cblakedev' target='_blank' rel='noreferrer'><FaLinkedinIn /></a>
                                 </Col>
                                 <Col>
-                                    <a href='https://github.com/cblake35' target='_blank' rel='noreferrer'><FiGithub /></a>
-                                </Col>
-                                <Col>
-                                    <a href='https://twitter.com/CBlakeDev' target='_blank' rel='noreferrer'><AiOutlineTwitter /></a>
+                                    <a href='https://github.com/cblakedev' target='_blank' rel='noreferrer'><FiGithub /></a>
                                 </Col>
                             </Row>
                         </Offcanvas.Body>
