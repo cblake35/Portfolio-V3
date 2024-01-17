@@ -542,15 +542,10 @@ body {
 }
 
 .aboutMeImg img{
-    width: 375px;
+    width: 340px;
     height: 325px;
     box-shadow: -20px -20px #f4f4f3;
     border-radius: 15px;
-    transition: all .25s ease-in;
-}
-
-.aboutMeImg img:hover {
-    box-shadow: 20px 20px #FF7315;
 }
 
 .aboutMeInfo {
@@ -1023,7 +1018,7 @@ body {
     /* About Page */
 
     .aboutMeImg img {
-        width: 225px !important;
+        width: 210px !important;
         height: 200px !important;
     }
 

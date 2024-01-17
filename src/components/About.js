@@ -3,8 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import profileImg from "../assets/profileImg.jpg";
 import { IoMdDownload } from "react-icons/io";
 import resume from "../assets/ChrisBlake_Resume.pdf";
-import { SiExpress, SiPython, SiAmazonaws, SiGithub, SiTypescript, SiPostgresql, SiMocha, SiJavascript } from "react-icons/si";
-import { FaNodeJs, FaCss3Alt, FaReact } from "react-icons/fa";
+import { SiPython, SiAmazonaws, SiTypescript, SiPostgresql, SiJavascript, SiCsharp, SiMicrosoftsqlserver } from "react-icons/si";
+import { FaNodeJs, FaCss3Alt, FaReact, FaVuejs} from "react-icons/fa";
 import { AiFillHtml5 } from "react-icons/ai";
 
 function About() {
@@ -25,7 +25,7 @@ function About() {
 					<div className="aboutMeInfoWrapper">
 						<h2>Personal Info</h2>
 						<p>
-							Hi I'm Chris! I'm a Full Stack Developer with a passion for all things tech. I thrive on solving problems and creating unique solutions
+							Hi I'm Chris! I'm a Software Engineer with a passion for all things tech. I thrive on solving problems and creating unique solutions
 							that make a positive impact. My ultimate goal is to make a meaningful impact in the world by leveraging the latest technologies and 
                             tools to create innovative solutions that inspire and assist others.
 						</p>
@@ -43,10 +43,14 @@ function About() {
 
 			<Row className="skillsTitleWrapper">
 				<Col className="skillsTitle">
-					<h2>My Skills</h2>
+					<h2>Skills</h2>
 				</Col>
 			</Row>
 			<Row className="skillsListWrapper">
+				<Col xs={6} sm={4} md={3} className="skillsList">
+					<SiCsharp />
+					<h5>C#</h5>
+				</Col>
 				<Col xs={6} sm={4} md={3} className="skillsList">
 					<SiJavascript />
 					<h5>JavaScript</h5>
@@ -56,32 +60,12 @@ function About() {
 					<h5>Python</h5>
 				</Col>
 				<Col xs={6} sm={4} md={3} className="skillsList">
+					<FaVuejs />
+					<h5>Vue</h5>
+				</Col>
+				<Col xs={6} sm={4} md={3} className="skillsList">
 					<FaReact />
 					<h5>React</h5>
-				</Col>
-				<Col xs={6} sm={4} md={3} className="skillsList">
-					<FaNodeJs />
-					<h5>Node</h5>
-				</Col>
-				<Col xs={6} sm={4} md={3} className="skillsList">
-					<SiTypescript />
-					<h5>TypeScript</h5>
-				</Col>
-				<Col xs={6} sm={4} md={3} className="skillsList">
-					<SiPostgresql />
-					<h5>Postgres</h5>
-				</Col>
-				<Col xs={6} sm={4} md={3} className="skillsList">
-					<SiAmazonaws />
-					<h5>AWS</h5>
-				</Col>
-				<Col xs={6} sm={4} md={3} className="skillsList">
-					<SiExpress />
-					<h5>Express</h5>
-				</Col>
-				<Col xs={6} sm={4} md={3} className="skillsList">
-					<SiMocha />
-					<h5>Mocha</h5>
 				</Col>
 				<Col xs={6} sm={4} md={3} className="skillsList">
 					<AiFillHtml5 />
@@ -92,8 +76,24 @@ function About() {
 					<h5>CSS</h5>
 				</Col>
 				<Col xs={6} sm={4} md={3} className="skillsList">
-					<SiGithub />
-					<h5>Github</h5>
+					<FaNodeJs />
+					<h5>Node.js</h5>
+				</Col>
+				<Col xs={6} sm={4} md={3} className="skillsList">
+					<SiTypescript />
+					<h5>TypeScript</h5>
+				</Col>
+				<Col xs={6} sm={4} md={3} className="skillsList">
+					<SiMicrosoftsqlserver />
+					<h5>SQL Server</h5>
+				</Col>
+				<Col xs={6} sm={4} md={3} className="skillsList">
+					<SiPostgresql />
+					<h5>Postgres</h5>
+				</Col>
+				<Col xs={6} sm={4} md={3} className="skillsList">
+					<SiAmazonaws />
+					<h5>AWS</h5>
 				</Col>
 			</Row>
 		</Container>

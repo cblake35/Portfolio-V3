@@ -107,14 +107,7 @@ const MyModals = (props) => {
                             </ul>
                         </Col>
                     </Row>
-                    <Row className='livesiteWrapper'>
-                        <Col>
-                            <h6>Site: </h6>
-                            <a className='livesite' href='https://www.buybeeronline.com/' target='_blank' rel='noreferrer'> Buy Beer Online</a>
-                        </Col>
-                    </Row>
                 </Modal.Body>
-                <Modal.Footer> </Modal.Footer>
             </Modal>
 
             <Modal show={props.showTwo} onHide={props.handleCloseTwo}>
@@ -159,7 +152,6 @@ const MyModals = (props) => {
                         </Col>
                     </Row>
                 </Modal.Body>
-                <Modal.Footer> </Modal.Footer>
             </Modal>
 
             <Modal show={props.showThree} onHide={props.handleCloseThree}>
@@ -192,7 +184,6 @@ const MyModals = (props) => {
                         </Col>
                     </Row>
                 </Modal.Body>
-                <Modal.Footer> </Modal.Footer>
             </Modal>
 
             <Modal show={props.showFour} onHide={props.handleCloseFour}>
@@ -229,7 +220,6 @@ const MyModals = (props) => {
                         </Col>
                     </Row>
                 </Modal.Body>
-                <Modal.Footer> </Modal.Footer>
             </Modal>
         </>
     )
