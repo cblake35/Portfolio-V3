@@ -22,7 +22,6 @@ function Sidebar() {
             <Router>
                 <div className='socialMediaLinks'>
                     <a href='https://www.linkedin.com/in/cblakedev/' target='_blank' rel='noreferrer'><FaLinkedinIn /></a>
-                    <a href='https://github.com/cblakedev' target='_blank' rel='noreferrer'><FiGithub /></a>
                     <p></p>
                 </div>
                 <div className='routeWrapper'>
